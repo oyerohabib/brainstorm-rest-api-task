@@ -1,5 +1,5 @@
 # Brainstorm Authorized Rest Api Task (PHP)
-<p> This is a simple Rest Api project that simplies gets the Capsules data from the spacex website and returns it.</p>
+<p>This is a simple Rest Api project that simplies gets the Capsules data from the spacex website and returns it.</p>
 
 ## Steps to running this project
 - Ensure you are inside the project folder after you must have cloned it.
