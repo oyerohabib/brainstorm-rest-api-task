@@ -4,10 +4,18 @@ require_once __DIR__ . '/app/Controllers/CapsuleController.php';
 require_once __DIR__ . '/app/Helpers/function.php';
 
 // Handle CORS headers
-header("Access-Control-Allow-Origin: http://localhost:3000, http://localhost:5000, http://brainstorm-spacex-task.netlify.app, *");
-header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS");
-header("Access-Control-Allow-Headers: Content-Type, Authorization");
-header("Access-Control-Allow-Credentials: true");
+$allowedOrigins = [
+    'http://localhost:3000',
+    'http://localhost:5000',
+    'http://brainstorm-spacex-task.netlify.app',
+    '*'
+];
+
+$requestOrigin = isset($_SERVER['HTTP_ORIGIN']) ? $_SERVER['HTTP_ORIGIN'] : '';
+
+if (in_array($requestOrigin, $allowedOrigins)) {
+    header("Access-Control-Allow-Origin: " . $requestOrigin);
+}
 
 // Handle OPTIONS preflight requests
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
