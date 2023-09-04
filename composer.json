@@ -2,8 +2,7 @@
   "name": "brainstorm/spacex-rest-api",
   "description": "brainstorm assessment task for the authorized spacex rest api",
   "require": {
-    "php": "^8.2",
-    "spatie/laravel-cors": "^1.7"
+    "php": "^8.2"
   },
   "scripts": {
     "start": "php -S localhost:8000 -t ."
