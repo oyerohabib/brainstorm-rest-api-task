@@ -1,7 +1,6 @@
 <?php
 
 require_once __DIR__ . '/app/Controllers/CapsuleController.php';
-require_once __DIR__ . '/app/Enum/ActionEnum.php';
 require_once  __DIR__ . '/app/Helpers/function.php';
 
 $capsuleController = new CapsuleController();

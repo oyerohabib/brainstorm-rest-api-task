@@ -3,10 +3,9 @@
   "description": "brainstorm assessment task for the authorized spacex rest api",
   "require": {
     "php": "^8.2",
-    "squizlabs/php_codesniffer": "^3.7"
+    "spatie/laravel-cors": "^1.7"
   },
   "scripts": {
-    "start": "php -S localhost:8000 -t .",
-    "lint": "./vendor/bin/phpcs --standard=PSR2 app/"
+    "start": "php -S localhost:8000 -t ."
   }
 }
