@@ -8,7 +8,7 @@ $allowedOrigins = [
     'http://localhost:3000',
     'http://localhost:5000',
     'http://brainstorm-spacex-task.netlify.app',
-    '*'
+    "https://brainstorm-spacex-task.vercel.app"
 ];
 
 $requestOrigin = isset($_SERVER['HTTP_ORIGIN']) ? $_SERVER['HTTP_ORIGIN'] : '';
